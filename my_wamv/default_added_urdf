@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="blueboat_urdf">
+  <link name="world"/>
+  <link name="base_link">
+    <inertial>
+      <origin
+        xyz="0.385513736392934 0.0490743542863906 -0.613621250724049"
+        rpy="0 0 0" />
+      <mass
+        value="28.784" />
+      <inertia
+        ixx="3.34"
+        ixy="0.09"
+        ixz="-0.25"
+        iyy="3.42"
+        iyz="0.05"
+        izz="3.68" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/base_link.stl" />
+      </geometry>
+      <material
+        name="grey">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/base_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <link
+    name="left_link">
+    <inertial>
+      <origin
+        xyz="0.0310805605236868 -0.00261283718392713 -1.96268754248941E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185850494502652" />
+      <inertia
+        ixx="0.00000720"
+        ixy="-0.00000013"
+        ixz="0.00000003"
+        iyy="0.00000566"
+        iyz="0"
+        izz="0.00000816" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/left_link.stl" />
+      </geometry>
+      <material
+        name="grey">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/left_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="left_joint" type="continuous"> <!-- 修改点1：类型改为continuous -->
+    <origin xyz="0.75097 1.1523 -0.272" rpy="0 0 -1.5708"/>
+    <parent link="base_link"/>
+    <child link="left_link"/>
+    <axis xyz="-0.99648 0.083772 0"/> <!-- 保持原有旋转轴 -->
+    <limit effort="43.18" velocity="100"/> <!-- 修改点2：计算推力限制 -->
+    <dynamics damping="0.1"/> <!-- 新增水阻模拟 -->
+  </joint>
+  
+  <link
+    name="right_link">
+    <inertial>
+      <origin
+        xyz="0.031080555088574 -0.00261291005419406 1.85383385586935E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.0185850515024319" />
+      <inertia
+        ixx="0.00000720"
+        ixy="-0.00000013"
+        ixz="0.00000003"
+        iyy="0.00000566"
+        iyz="0"
+        izz="0.00000816" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/right_link.stl" />
+      </geometry>
+      <material
+        name="grey">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://blueboat_urdf/meshes/right_link.stl" />
+      </geometry>
+    </collision>
+  </link>
+  <!-- 🔄 将右关节改为连续旋转 -->
+  <joint name="right_joint" type="continuous"> <!-- 修改点3：类型改为continuous -->
+    <origin xyz="0.15705 1.2022 -0.272" rpy="0 0 -1.5708"/>
+    <parent link="base_link"/>
+    <child link="right_link"/>
+    <axis xyz="-0.99648 0.083772 0"/>
+    <limit effort="43.18" velocity="100"/> <!-- 修改点4：与左侧对称 -->
+    <dynamics damping="0.1"/>
+  </joint>
+</robot>

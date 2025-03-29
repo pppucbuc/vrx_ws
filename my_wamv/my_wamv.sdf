@@ -1,0 +1,175 @@
+<sdf version='1.10'>
+  <model name='my_wamv'>
+    <joint name='world_to_base' type='fixed'>
+      <pose relative_to='__model__'>0 0 0 0 0 0</pose>
+      <parent>world</parent>
+      <child>base_link</child>
+    </joint>
+    <link name='base_link'>
+      <pose relative_to='world_to_base'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.38551373639293401 0.049074354286390599 -0.61362125072404905 0 0 0</pose>
+        <mass>28.783999999999999</mass>
+        <inertia>
+          <ixx>3.3399999999999999</ixx>
+          <ixy>0.089999999999999997</ixy>
+          <ixz>-0.25</ixz>
+          <iyy>3.4199999999999999</iyy>
+          <iyz>0.050000000000000003</iyz>
+          <izz>3.6800000000000002</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/base_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.9375 0.9375 0.9375 1</diffuse>
+          <ambient>0.9375 0.9375 0.9375 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='left_joint' type='revolute'>
+      <pose relative_to='base_link'>0.75097000000000003 1.1523000000000001 -0.27200000000000002 0 0 -1.5708</pose>
+      <parent>base_link</parent>
+      <child>left_link</child>
+      <axis>
+        <xyz>-0.99648000000000003 0.083771999999999999 0</xyz>
+        <limit>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='left_link'>
+      <pose relative_to='left_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.031080560523686799 -0.0026128371839271298 -1.96268754248941e-07 0 0 0</pose>
+        <mass>0.018585049450265199</mass>
+        <inertia>
+          <ixx>7.1999999999999997e-06</ixx>
+          <ixy>-1.3e-07</ixy>
+          <ixz>2.9999999999999997e-08</ixz>
+          <iyy>5.66e-06</iyy>
+          <iyz>0</iyz>
+          <izz>8.1599999999999998e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='left_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/left_link.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='left_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/left_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.9375 0.9375 0.9375 1</diffuse>
+          <ambient>0.9375 0.9375 0.9375 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <joint name='right_joint' type='revolute'>
+      <pose relative_to='base_link'>0.15705 1.2021999999999999 -0.27200000000000002 0 0 -1.5708</pose>
+      <parent>base_link</parent>
+      <child>right_link</child>
+      <axis>
+        <xyz>-0.99648000000000003 0.083771999999999999 0</xyz>
+        <limit>
+          <effort>1000</effort>
+          <velocity>1000</velocity>
+          <lower>-inf</lower>
+          <upper>inf</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='right_link'>
+      <pose relative_to='right_joint'>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0.031080555088574002 -0.0026129100541940598 1.85383385586935e-07 0 0 0</pose>
+        <mass>0.0185850515024319</mass>
+        <inertia>
+          <ixx>7.1999999999999997e-06</ixx>
+          <ixy>-1.3e-07</ixy>
+          <ixz>2.9999999999999997e-08</ixz>
+          <iyy>5.66e-06</iyy>
+          <iyz>0</iyz>
+          <izz>8.1599999999999998e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='right_link_collision'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/right_link.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='right_link_visual'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>file:///home/neofelis/my_wamv/meshes/right_link.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>0.9375 0.9375 0.9375 1</diffuse>
+          <ambient>0.9375 0.9375 0.9375 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <plugin name='hydrodynamics' filename='libusv_gazebo_hydrodynamics.so'>
+      <link name='base_link'>
+        <center_of_volume>0 0 0.5</center_of_volume>
+        <dimensions>3.0 1.5 0.5</dimensions>
+        <fluid_density>1025.0</fluid_density>
+      </link>
+    </plugin>
+    <plugin name='thruster_plugin' filename='libusv_gazebo_thruster_plugin.so'>
+      <thruster>
+        <name>left</name>
+        <link>left_link</link>
+        <topic>/wamv/thrusters/left/thrust</topic>
+      </thruster>
+      <thruster>
+        <name>right</name>
+        <link>right_link</link>
+        <topic>/wamv/thrusters/right/thrust</topic>
+      </thruster>
+    </plugin>
+  </model>
+</sdf>

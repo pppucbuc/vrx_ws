@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-b13ab7c2d425409719f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vrx_ros",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "optical_frame_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-optical_frame_publisher-RelWithDebInfo-44c3afb6c658b9e3e008.json",
+					"name" : "optical_frame_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_tf_broadcaster::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_tf_broadcaster-RelWithDebInfo-6fbcd5c974a539c2daf9.json",
+					"name" : "pose_tf_broadcaster",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-8f4b80224227f096c9aa.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vrx_ros_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vrx_ros_uninstall-RelWithDebInfo-ff03b91d45a8a455520f.json",
+					"name" : "vrx_ros_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/neofelis/vrx_ws/build/vrx_ros",
+		"source" : "/home/neofelis/vrx_ws/src/vrx/vrx_ros"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

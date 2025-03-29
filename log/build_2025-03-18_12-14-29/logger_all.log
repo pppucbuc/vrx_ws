@@ -1,0 +1,458 @@
+[0.058s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--merge-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']
+[0.058s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x77f63e318730>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x77f63e472530>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x77f63e472530>>)
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.150s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.150s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/neofelis/vrx_ws'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.157s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'ros'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['cmake', 'python']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'cmake'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extensions ['python_setup_py']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/images) by extension 'python_setup_py'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ignore', 'ignore_ament_install']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ignore_ament_install'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_pkg']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_pkg'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['colcon_meta']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'colcon_meta'
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extensions ['ros']
+[0.158s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_gz) by extension 'ros'
+[0.160s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_gz' with type 'ros.ament_cmake' and name 'vrx_gz'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_ros) by extension 'ros'
+[0.161s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_ros' with type 'ros.ament_cmake' and name 'vrx_ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'ros'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['cmake', 'python']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'cmake'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extensions ['python_setup_py']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf) by extension 'python_setup_py'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/vrx_gazebo) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/vrx_gazebo' with type 'ros.ament_cmake' and name 'vrx_gazebo'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_description) by extension 'ros'
+[0.162s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_description' with type 'ros.ament_cmake' and name 'wamv_description'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/vrx/vrx_urdf/wamv_gazebo) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vrx/vrx_urdf/wamv_gazebo' with type 'ros.ament_cmake' and name 'wamv_gazebo'
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.163s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.179s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.180s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/neofelis/vrx_ws/install' in the environment variable AMENT_PREFIX_PATH doesn't contain any 'local_setup.*' files.
+[0.180s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/neofelis/vrx_ws/install
+[0.181s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 321 installed packages in /opt/ros/humble
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.204s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neofelis/vrx_ws/build/vrx_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neofelis/vrx_ws/install', 'merge_install': True, 'path': '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.204s] Level 5:colcon.colcon_core.verb:set package 'vrx_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.204s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neofelis/vrx_ws/build/vrx_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neofelis/vrx_ws/install', 'merge_install': True, 'path': '/home/neofelis/vrx_ws/src/vrx/vrx_ros', 'symlink_install': False, 'test_result_base': None}
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'vrx_gz' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] DEBUG:colcon.colcon_core.verb:Building package 'vrx_gz' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neofelis/vrx_ws/build/vrx_gz', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neofelis/vrx_ws/install', 'merge_install': True, 'path': '/home/neofelis/vrx_ws/src/vrx/vrx_gz', 'symlink_install': False, 'test_result_base': None}
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neofelis/vrx_ws/build/wamv_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neofelis/vrx_ws/install', 'merge_install': True, 'path': '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_description', 'symlink_install': False, 'test_result_base': None}
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress']'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.205s] Level 5:colcon.colcon_core.verb:set package 'wamv_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.205s] DEBUG:colcon.colcon_core.verb:Building package 'wamv_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/neofelis/vrx_ws/build/wamv_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '-DIGNITION_VERSION=fortress'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/neofelis/vrx_ws/install', 'merge_install': True, 'path': '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.205s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.206s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.206s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo' with build type 'ament_cmake'
+[0.206s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo'
+[0.207s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.207s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.207s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.209s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neofelis/vrx_ws/src/vrx/vrx_ros' with build type 'ament_cmake'
+[0.209s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neofelis/vrx_ws/src/vrx/vrx_ros'
+[0.209s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.209s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[0.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_ros -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[0.621s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/vrx_gazebo -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[0.622s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_gazebo -- -j16 -l16
+[0.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_gazebo -- -j16 -l16
+[0.834s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_gazebo
+[0.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[0.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_gazebo
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[0.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[0.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_gazebo.pc'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[0.893s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.ps1'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.dsv'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.sh'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.bash'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.zsh'
+[0.895s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_gazebo)
+[0.895s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gazebo)
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[0.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gazebo', 'cmake_prefix_path')
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.ps1'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gazebo/hook/cmake_prefix_path.sh'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_gazebo.pc'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[0.897s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.ps1'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.dsv'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.sh'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.bash'
+[0.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gazebo/package.zsh'
+[0.899s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_gazebo)
+[0.899s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_description' with build type 'ament_cmake'
+[0.899s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_description'
+[0.899s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.899s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[1.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_ros -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[1.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_ros -- -j16 -l16
+[1.332s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_description -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[1.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/neofelis/vrx_ws/build/wamv_description -- -j16 -l16
+[1.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/neofelis/vrx_ws/build/wamv_description -- -j16 -l16
+[1.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/neofelis/vrx_ws/build/wamv_description
+[1.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[1.463s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/neofelis/vrx_ws/build/wamv_description
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[1.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[1.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.dsv'
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.sh'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/wamv_description.pc'
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.ps1'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/wamv_description/package.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.sh'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.bash'
+[1.466s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.zsh'
+[1.467s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/wamv_description)
+[1.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_description)
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[1.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_description', 'cmake_prefix_path')
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.ps1'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_description/hook/cmake_prefix_path.sh'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/wamv_description.pc'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.ps1'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/wamv_description/package.dsv'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.sh'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.bash'
+[1.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_description/package.zsh'
+[1.475s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/wamv_description)
+[1.475s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo' with build type 'ament_cmake'
+[1.475s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo'
+[1.476s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.476s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.483s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[1.866s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_urdf/wamv_gazebo -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[1.867s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/neofelis/vrx_ws/build/wamv_gazebo -- -j16 -l16
+[1.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --build /home/neofelis/vrx_ws/build/wamv_gazebo -- -j16 -l16
+[1.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/wamv_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/neofelis/vrx_ws/build/wamv_gazebo
+[1.902s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[1.902s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/wamv_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) GZ_SIM_RESOURCE_PATH=/home/neofelis/vrx_ws/install/share:${GZ_SIM_RESOURCE_PATH} /usr/bin/cmake --install /home/neofelis/vrx_ws/build/wamv_gazebo
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[1.903s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[1.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[1.903s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[1.903s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/wamv_gazebo.pc'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[1.904s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.ps1'
+[1.904s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.dsv'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.sh'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.bash'
+[1.905s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.zsh'
+[1.905s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/wamv_gazebo)
+[1.905s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wamv_gazebo)
+[1.906s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[1.906s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[1.906s] Level 1:colcon.colcon_core.shell:create_environment_hook('wamv_gazebo', 'cmake_prefix_path')
+[1.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.ps1'
+[1.906s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.dsv'
+[1.907s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/wamv_gazebo/hook/cmake_prefix_path.sh'
+[1.907s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[1.907s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.907s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/wamv_gazebo.pc'
+[1.907s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[1.907s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[1.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.ps1'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.dsv'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.sh'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.bash'
+[1.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/wamv_gazebo/package.zsh'
+[1.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/wamv_gazebo)
+[14.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_ros -- -j16 -l16
+[14.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_ros
+[14.660s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[14.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_ros
+[14.661s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[14.661s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[14.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[14.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[14.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[14.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.sh'
+[14.662s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[14.662s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[14.663s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_ros.pc'
+[14.663s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[14.663s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[14.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.ps1'
+[14.663s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_ros/package.dsv'
+[14.663s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.sh'
+[14.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.bash'
+[14.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.zsh'
+[14.664s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_ros)
+[14.664s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_ros)
+[14.664s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[14.664s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[14.665s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_ros', 'cmake_prefix_path')
+[14.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.ps1'
+[14.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.dsv'
+[14.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_ros/hook/cmake_prefix_path.sh'
+[14.665s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[14.665s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[14.666s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_ros.pc'
+[14.666s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[14.666s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[14.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.ps1'
+[14.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_ros/package.dsv'
+[14.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.sh'
+[14.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.bash'
+[14.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_ros/package.zsh'
+[14.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_ros)
+[14.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/neofelis/vrx_ws/src/vrx/vrx_gz' with build type 'ament_cmake'
+[14.667s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/neofelis/vrx_ws/src/vrx/vrx_gz'
+[14.667s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.667s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.673s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_gz -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[16.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake /home/neofelis/vrx_ws/src/vrx/vrx_gz -DCMAKE_BUILD_TYPE=RelWithDebInfo -DIGNITION_VERSION=fortress -DCMAKE_INSTALL_PREFIX=/home/neofelis/vrx_ws/install
+[16.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_gz -- -j16 -l16
+[45.318s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --build /home/neofelis/vrx_ws/build/vrx_gz -- -j16 -l16
+[45.319s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/neofelis/vrx_ws/build/vrx_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_gz
+[45.447s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[45.448s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[45.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/neofelis/vrx_ws/build/vrx_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(vrx) /usr/bin/cmake --install /home/neofelis/vrx_ws/build/vrx_gz
+[45.448s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[45.448s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[45.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[45.449s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[45.449s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.sh'
+[45.449s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[45.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[45.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[45.450s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[45.450s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.sh'
+[45.450s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[45.450s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_gz.pc'
+[45.450s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[45.450s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[45.450s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.ps1'
+[45.451s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/package.dsv'
+[45.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.sh'
+[45.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.bash'
+[45.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.zsh'
+[45.452s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_gz)
+[45.452s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vrx_gz)
+[45.452s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake module files
+[45.452s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install' for CMake config files
+[45.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'cmake_prefix_path')
+[45.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.ps1'
+[45.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.dsv'
+[45.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/cmake_prefix_path.sh'
+[45.453s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib'
+[45.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('vrx_gz', 'ld_library_path_lib')
+[45.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.ps1'
+[45.454s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.dsv'
+[45.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/neofelis/vrx_ws/install/share/vrx_gz/hook/ld_library_path_lib.sh'
+[45.454s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[45.454s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/pkgconfig/vrx_gz.pc'
+[45.454s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/lib/python3.10/site-packages'
+[45.454s] Level 1:colcon.colcon_core.environment:checking '/home/neofelis/vrx_ws/install/bin'
+[45.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.ps1'
+[45.455s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/neofelis/vrx_ws/install/share/vrx_gz/package.dsv'
+[45.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.sh'
+[45.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.bash'
+[45.460s] INFO:colcon.colcon_core.shell:Creating package script '/home/neofelis/vrx_ws/install/share/vrx_gz/package.zsh'
+[45.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/neofelis/vrx_ws/install/share/colcon-core/packages/vrx_gz)
+[45.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[45.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[45.460s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[45.460s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[45.463s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[45.463s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[45.464s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[45.474s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[45.474s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neofelis/vrx_ws/install/local_setup.ps1'
+[45.475s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neofelis/vrx_ws/install/_local_setup_util_ps1.py'
+[45.476s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neofelis/vrx_ws/install/setup.ps1'
+[45.476s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neofelis/vrx_ws/install/local_setup.sh'
+[45.476s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/neofelis/vrx_ws/install/_local_setup_util_sh.py'
+[45.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neofelis/vrx_ws/install/setup.sh'
+[45.477s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neofelis/vrx_ws/install/local_setup.bash'
+[45.477s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neofelis/vrx_ws/install/setup.bash'
+[45.478s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/neofelis/vrx_ws/install/local_setup.zsh'
+[45.478s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/neofelis/vrx_ws/install/setup.zsh'

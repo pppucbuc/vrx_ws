@@ -1,0 +1,30 @@
+colcon build --merge-install
+source install/setup.bash
+
+
+//run 
+ros2 launch vrx_gz competition.launch.py world:=sydney_regatta
+
+
+
+source /opt/ros/humble/setup.bash
+
+//view model in vrx
+ros2 launch vrx_gazebo rviz.launch.py
+
+
+//create new umv (CAN ONLY BE USED UNDER vrx_ws directory !!!!)
+ros2 launch vrx_gazebo generate_wamv.launch.py component_yaml:=`pwd`/empty_component_config.yaml thruster_yaml:=`pwd`/empty_thruster_config.yaml wamv_target:=`pwd`/wamv_target.urdf wamv_locked:=False
+ 
+ // run my customized urdf under vrx_ws direcotry
+ ros2 launch vrx_gz competition.launch.py world:=sydney_regatta urdf:=$(pwd)/my_wamv/wamv_target.urdf
+ 
+ ros2 launch vrx_gz competition.launch.py world:=sydney_regatta urdf:=$(pwd)/my_wamv/revised_urdf.urdf
+
+
+//use my customized urdf model, if not specified, use the default one
+ros2 launch vrx_gazebo generate_wamv.launch.py component_yaml:=`pwd`/empty_component_config.yaml thruster_yaml:=`pwd`/empty_thruster_config.yaml wamv_target:=`pwd`/wamv_target.urdf wamv_locked:=False
+
+// drive the boat by publishing value
+ros2 topic pub /wamv/thrusters/left/thrust std_msgs/msg/Float64 "{data: 20.0}"
+ros2 topic pub /wamv/thrusters/right/thrust std_msgs/msg/Float64 "{data: 30.0}"
